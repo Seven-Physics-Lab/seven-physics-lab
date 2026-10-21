@@ -1,0 +1,461 @@
+{
+  "topics": [
+    {
+      "id": "mechanics",
+      "name": "Mechanics",
+      "subs": [
+        {
+          "id": "kinematics",
+          "name": "Kinematics",
+          "sims": [
+            "motion-graphs",
+            "projectile-launcher"
+          ]
+        },
+        {
+          "id": "forces",
+          "name": "Forces and momentum",
+          "sims": [
+            "collisions",
+            "incline",
+            "circular-motion"
+          ]
+        },
+        {
+          "id": "energy",
+          "name": "Work and energy",
+          "sims": [
+            "work",
+            "skate-park"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oscillations",
+      "name": "Oscillations",
+      "subs": [
+        {
+          "id": "shm",
+          "name": "Simple harmonic motion",
+          "sims": [
+            "mass-on-a-spring",
+            "simple-pendulum"
+          ]
+        },
+        {
+          "id": "resonance",
+          "name": "Damping and resonance",
+          "sims": [
+            "damping-and-resonance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "Waves and sound",
+      "subs": [
+        {
+          "id": "wave-model",
+          "name": "The wave model",
+          "sims": [
+            "wave-anatomy",
+            "wave-speed-on-a-string"
+          ]
+        },
+        {
+          "id": "standing",
+          "name": "Standing waves",
+          "sims": [
+            "standing-waves",
+            "harmonics-and-pipes",
+            "resonance-tube"
+          ]
+        },
+        {
+          "id": "sound",
+          "name": "Sound",
+          "sims": [
+            "doppler-effect"
+          ]
+        },
+        {
+          "id": "water",
+          "name": "Water waves",
+          "sims": [
+            "ripple-tank"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "name": "Light and optics",
+      "subs": [
+        {
+          "id": "refraction",
+          "name": "Refraction",
+          "sims": [
+            "refraction-and-tir"
+          ]
+        },
+        {
+          "id": "interference",
+          "name": "Interference and diffraction",
+          "sims": [
+            "double-slit",
+            "single-slit",
+            "diffraction-grating",
+            "thin-film"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electromagnetism",
+      "name": "Electricity and magnetism",
+      "subs": [
+        {
+          "id": "circuits",
+          "name": "Circuits",
+          "sims": [
+            "internal-resistance"
+          ]
+        },
+        {
+          "id": "induction",
+          "name": "Induction",
+          "sims": [
+            "faraday-bench"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fields",
+      "name": "Fields",
+      "subs": [
+        {
+          "id": "gravitation",
+          "name": "Gravitation",
+          "sims": [
+            "gravitational-fields"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal physics",
+      "subs": [
+        {
+          "id": "gases",
+          "name": "Gas laws",
+          "sims": [
+            "ideal-gas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quantum",
+      "name": "Quantum physics",
+      "subs": [
+        {
+          "id": "photons",
+          "name": "Photons",
+          "sims": [
+            "photoelectric-effect",
+            "compton-scattering"
+          ]
+        }
+      ]
+    }
+  ],
+  "sims": [
+    {
+      "slug": "motion-graphs",
+      "key": "a1-motion",
+      "file": "a1-linked-motion-graphs.js",
+      "name": "Linked Motion Graphs",
+      "code": "A.1",
+      "codeName": "Kinematics",
+      "blurb": "Drag any one of the three graphs and watch the other two redraw with the object.",
+      "keywords": "displacement velocity acceleration gradient area suvat graphs"
+    },
+    {
+      "slug": "projectile-launcher",
+      "key": "a1-projectile",
+      "file": "a1-projectile-launcher.js",
+      "name": "Projectile Launcher",
+      "code": "A.1",
+      "codeName": "Kinematics",
+      "blurb": "Fire at any speed and angle, with the no-drag path left behind for comparison.",
+      "keywords": "projectile trajectory range drag components parabola gravity"
+    },
+    {
+      "slug": "collisions",
+      "key": "a2-collide",
+      "file": "a2-collisions.js",
+      "name": "Collisions",
+      "code": "A.2",
+      "codeName": "Forces and momentum",
+      "blurb": "No collision formula anywhere: the two bodies simply push each other while they touch.",
+      "keywords": "momentum impulse elastic inelastic restitution glancing right angle"
+    },
+    {
+      "slug": "incline",
+      "key": "a2-incline",
+      "file": "a2-incline.js",
+      "name": "The Inclined Plane",
+      "code": "A.2",
+      "codeName": "Forces and momentum",
+      "blurb": "Tilt it until it goes. The gauge fills only as far as it needs to, then snaps down to what sliding takes.",
+      "keywords": "friction static kinetic coefficient inclined plane ramp slope critical angle normal force resolving components free body limiting Amontons"
+    },
+    {
+      "slug": "circular-motion",
+      "key": "a2-circular",
+      "file": "a2-circular.js",
+      "name": "The Circular Motion Rig",
+      "code": "A.2",
+      "codeName": "Forces and momentum",
+      "blurb": "Three ways of being pulled towards a centre: a string, a banked road, and a loop that lets go at the top.",
+      "keywords": "circular motion centripetal conical pendulum banked track bank angle vertical loop tension normal force critical speed radius angular velocity period rod string"
+    },
+    {
+      "slug": "work",
+      "key": "a3-work",
+      "file": "a3-work.js",
+      "name": "Work",
+      "code": "A.3",
+      "codeName": "Work, energy and power",
+      "blurb": "Work is an area, not a product. Stretch a rubber band and watch half of force times extension be wrong.",
+      "keywords": "work energy area under graph force distance spring elastic potential rubber band variable force F s cos theta component friction dragging rope angle joule"
+    },
+    {
+      "slug": "skate-park",
+      "key": "a3-skate",
+      "file": "a3-skate-park.js",
+      "name": "The Skate Park",
+      "code": "A.3",
+      "codeName": "Work, energy and power",
+      "blurb": "The track can push and cannot pull, and that one sentence is the whole topic.",
+      "keywords": "energy conservation kinetic potential friction loop track normal force"
+    },
+    {
+      "slug": "mass-on-a-spring",
+      "key": "c1-spring",
+      "file": "c1-mass-spring.js",
+      "name": "Mass on a Spring",
+      "code": "C.1",
+      "codeName": "Simple harmonic motion",
+      "blurb": "Hooke's law becomes a = -(k/m)x in one step, with the line that defines SHM drawn.",
+      "keywords": "shm hooke spring period amplitude phase energy",
+      "rail": false
+    },
+    {
+      "slug": "simple-pendulum",
+      "key": "c1-pendulum",
+      "file": "c1-simple-pendulum.js",
+      "name": "Simple Pendulum",
+      "code": "C.1",
+      "codeName": "Simple harmonic motion",
+      "blurb": "The exact swing against the small-angle one, and where they part company.",
+      "keywords": "pendulum period small angle approximation shm length gravity",
+      "rail": false
+    },
+    {
+      "slug": "damping-and-resonance",
+      "key": "c1-resonance",
+      "file": "c1-resonance.js",
+      "name": "Damping and Resonance",
+      "code": "C.1",
+      "codeName": "Simple harmonic motion",
+      "blurb": "Sweep the driving frequency and build the resonance curve, sharpening as damping falls.",
+      "keywords": "resonance damping driving frequency amplitude phase lag q factor",
+      "rail": false
+    },
+    {
+      "slug": "wave-anatomy",
+      "key": "c2-wave",
+      "file": "c2-wave-anatomy.js",
+      "name": "Wave Anatomy",
+      "code": "C.2",
+      "codeName": "The wave model",
+      "blurb": "One particle tracked, so you can see why one graph gives a period and the other a wavelength.",
+      "keywords": "wavelength period frequency transverse longitudinal wave speed"
+    },
+    {
+      "slug": "wave-speed-on-a-string",
+      "key": "c2-string",
+      "file": "c2-string-speed.js",
+      "name": "Wave Speed on a String",
+      "code": "C.2",
+      "codeName": "The wave model",
+      "blurb": "Work through eight masses and weigh a metre of string off the gradient.",
+      "keywords": "tension mass per unit length wave speed string gradient experiment"
+    },
+    {
+      "slug": "standing-waves",
+      "key": "c4-standing",
+      "file": "c4-standing-waves.js",
+      "name": "Standing Waves",
+      "code": "C.4",
+      "codeName": "Standing waves and resonance",
+      "blurb": "Slide the reflection to zero and watch the pattern start travelling again.",
+      "keywords": "standing wave nodes antinodes reflection superposition harmonics"
+    },
+    {
+      "slug": "harmonics-and-pipes",
+      "key": "c4-harmonics",
+      "file": "c4-harmonics.js",
+      "name": "Harmonics and Pipes",
+      "code": "C.4",
+      "codeName": "Standing waves and resonance",
+      "blurb": "Switch to the closed pipe and watch the even modes be rejected.",
+      "keywords": "harmonics open closed pipe fundamental overtone string boundary"
+    },
+    {
+      "slug": "resonance-tube",
+      "key": "c4-tube",
+      "file": "c4-resonance-tube.js",
+      "name": "Resonance Tube",
+      "code": "C.4",
+      "codeName": "Standing waves and resonance",
+      "blurb": "Work through all eight forks and read the speed of sound off the gradient.",
+      "keywords": "resonance tube speed of sound end correction tuning fork experiment"
+    },
+    {
+      "slug": "doppler-effect",
+      "key": "c5-doppler",
+      "file": "c5-doppler-sound.js",
+      "name": "The Doppler Effect",
+      "code": "C.5",
+      "codeName": "Doppler effect",
+      "blurb": "Push the source past the speed of sound and watch the cone appear out of the wavefronts.",
+      "keywords": "doppler shift source observer shock wave mach cone sound"
+    },
+    {
+      "slug": "ripple-tank",
+      "key": "c3-ripple",
+      "file": "c3-ripple-tank.js",
+      "name": "Ripple Tank",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "Every length to scale, with a printed rule: make the gap one wavelength and watch a beam stop being a beam.",
+      "keywords": "diffraction gap two source interference water waves huygens ripple"
+    },
+    {
+      "slug": "refraction-and-tir",
+      "key": "c3-refraction",
+      "file": "c3-refraction.js",
+      "name": "Refraction and Total Internal Reflection",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "Turn on the wavefronts to see why a ray bends at all, then send white light near the critical angle.",
+      "keywords": "snell refractive index critical angle dispersion prism total internal reflection"
+    },
+    {
+      "slug": "double-slit",
+      "key": "c3-slit",
+      "file": "c3-double-slit.js",
+      "name": "Young's Double Slit",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "A real Huygens wave goes through, and the pattern is what the screen records of it.",
+      "keywords": "young double slit fringes path difference interference coherence"
+    },
+    {
+      "slug": "single-slit",
+      "key": "c3-single",
+      "file": "c3-single-slit.js",
+      "name": "Single Slit",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "The envelope that modulates every double-slit pattern, built from the slit itself.",
+      "keywords": "single slit diffraction minima envelope width angular spread"
+    },
+    {
+      "slug": "diffraction-grating",
+      "key": "c3-grating",
+      "file": "c3-grating.js",
+      "name": "Diffraction Grating",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "Add slits and watch the maxima sharpen, with the orders where the sum says they are.",
+      "keywords": "grating orders resolution spectrum lines per mm maxima"
+    },
+    {
+      "slug": "thin-film",
+      "key": "c3-film",
+      "file": "c3-thin-film.js",
+      "name": "Thin Film",
+      "code": "C.3",
+      "codeName": "Wave phenomena",
+      "blurb": "The colour of oil on water, worked out from the two reflections and the eye's response.",
+      "keywords": "thin film interference soap oil coating phase change colour"
+    },
+    {
+      "slug": "internal-resistance",
+      "key": "b5-cell",
+      "file": "b5-internal-resistance.js",
+      "name": "Internal Resistance",
+      "code": "B.5",
+      "codeName": "Current and circuits",
+      "blurb": "Kirchhoff's laws are solved rather than the formulas quoted: load the divider and watch the reading sag.",
+      "keywords": "emf internal resistance terminal potential divider kirchhoff circuit"
+    },
+    {
+      "slug": "faraday-bench",
+      "key": "d4-faraday",
+      "file": "d4-induction.js",
+      "name": "The Faraday Bench",
+      "code": "D.4",
+      "codeName": "Induction",
+      "blurb": "Move the magnet by hand and the meters read how fast the flux is changing, and nothing else.",
+      "keywords": "faraday induction lenz emf flux coil magnet generator ac"
+    },
+    {
+      "slug": "gravitational-fields",
+      "key": "d1-gravity",
+      "file": "d1-gravitational-fields.js",
+      "name": "Gravitational Fields",
+      "code": "D.1",
+      "codeName": "Gravitational fields",
+      "blurb": "Newton's law added up and integrated: find the saddle, then weigh the planet off an orbit.",
+      "keywords": "gravitational field potential orbit kepler escape velocity equipotential"
+    },
+    {
+      "slug": "ideal-gas",
+      "key": "b3-gas",
+      "file": "b3-ideal-gas.js",
+      "name": "The Ideal Gas",
+      "code": "B.3",
+      "codeName": "Gas laws",
+      "blurb": "Three hundred hard spheres, a draggable piston, and the walls asked how hard they were hit.",
+      "keywords": "gas laws pressure volume temperature maxwell boltzmann kinetic theory piston"
+    },
+    {
+      "slug": "photoelectric-effect",
+      "key": "e2-photo",
+      "file": "e2-photoelectric.js",
+      "name": "The Photoelectric Effect",
+      "code": "E.2",
+      "codeName": "Quantum physics",
+      "blurb": "Photons land one at a time, and the stopping potential is found rather than quoted.",
+      "keywords": "photoelectric photon work function threshold stopping potential planck millikan"
+    },
+    {
+      "slug": "compton-scattering",
+      "key": "e2-compton",
+      "file": "e2-compton.js",
+      "name": "Compton Scattering",
+      "code": "E.2",
+      "codeName": "Quantum physics",
+      "blurb": "The shift solved from the two conservation laws, not quoted from the formula.",
+      "keywords": "compton scattering photon momentum wavelength shift x-ray electron"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+html, body { height: 100%; }
+body {
+  background: theme('colors.ground');
+  color: theme('colors.ink');
+  font-family: Quicksand, ui-rounded, 'Segoe UI', system-ui, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The landing page brings its words in once, from just below where they end
+ * up. Nothing else on the site animates on load. */
+@keyframes landing-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+.landing-rise { animation: landing-rise .85s cubic-bezier(.22,.7,.25,1) both; }
+.landing-d1 { animation-delay: .09s; }
+.landing-d2 { animation-delay: .19s; }
+.landing-d3 { animation-delay: .29s; }
+
+/* The simulations bring their own stylesheet, scoped to .ibs, and read these
+ * tokens from whatever they are mounted inside. The defaults are already the
+ * brand's, so this only has to pass the typeface through. */
+.sim-host .ibs {
+  --ibs-font: Quicksand, ui-rounded, 'Segoe UI', system-ui, sans-serif;
+}
+
+/* The page already carries the simulation's name in its heading, so the
+ * simulation's own title line is hidden and only its subtitle is kept. */
+.sim-host .ibs-head h3 { display: none; }
+.sim-host .ibs-head { margin-bottom: 10px; }
+
+/* --- the control rail -----------------------------------------------------
+ * On a wide screen the controls and the readings sit beside the apparatus
+ * instead of under it, so nothing that you operate needs scrolling. The rail
+ * scrolls inside itself, so however long a simulation's control list is, the
+ * apparatus keeps its place. Below 1100px none of this applies and the page is
+ * the single column it has always been.                                      */
+.sim-rail { display: none; }
+.sim-rail__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid theme('colors.brand.line');
+}
+.sim-rail__label {
+  font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: theme('colors.muted'); margin: 0;
+}
+.sim-rail .sim-rail__inner { display: flex; flex-direction: column; gap: 9px; }
+.sim-rail__inner > .ibs-controls,
+.sim-rail__inner > .ibs-reads { margin-bottom: 0; }
+/* the rail is narrower than the page, so the rows breathe a little less */
+.sim-rail__inner > .ibs-controls { padding: 9px 11px; gap: 8px 12px; }
+
+@media (min-width: 1100px) {
+  .sim-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 400px;
+    gap: 20px;
+    align-items: start;
+  }
+  .sim-rail {
+    display: block;
+    position: sticky;
+    top: 84px;                      /* clears the sticky site header */
+    max-height: calc(100vh - 104px);
+    overflow: auto;
+    overscroll-behavior: contain;
+    padding-right: 6px;
+  }
+  .sim-host:fullscreen .sim-rail { top: 0; max-height: calc(100vh - 48px); }
+  .sim-rail::-webkit-scrollbar { width: 8px; }
+  .sim-rail::-webkit-scrollbar-thumb {
+    background: theme('colors.brand.line'); border-radius: 999px;
+  }
+}
+
+/* A simulation that keeps its own two-column layout has no rail to put the
+ * full-screen button in, so the button sits in the card's top corner instead of
+ * on a row of its own. That is another 48px of screen for the apparatus. */
+.sim-host--plain .sim-fsrow { position: absolute; top: 14px; right: 14px; margin: 0; z-index: 2; }
+.sim-host--plain .ibs-head { padding-right: 160px; }
+
+/* a simulation shown full screen keeps its own white ground */
+.sim-host:fullscreen { background: #fff; padding: 20px; overflow: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
